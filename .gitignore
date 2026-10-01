@@ -1,0 +1,70 @@
+# [역할] 파이썬 인터프리터가 실행 시 생성하는 바이트코드 캐시 디렉터리를 제외합니다.
+__pycache__/
+
+# [역할] 컴파일된 파이썬 바이트코드 파일(.pyc, .pyo)을 추적에서 제외합니다.
+*.py[cod]
+
+# [역할] C 확장 모듈 컴파일 결과 파일(.so)을 제외합니다.
+*$py.class
+*.so
+
+# [역할] 패키지 배포 및 빌드 과정에서 생성되는 임시 아티팩트 디렉터리를 제외합니다.
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# [역할] 파이썬 가상환경(venv, virtualenv 등) 디렉터리를 제외하여 불필요한 패키지 파일 커밋을 방지합니다.
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# [역할] pytest, coverage 등 단위 테스트 및 코드 커버리지 측정 캐시 파일을 제외합니다.
+.pytest_cache/
+.coverage
+htmlcov/
+
+# [역할] mypy, pytype 등 정적 타입 검사기 캐시 디렉터리를 제외합니다.
+.mypy_cache/
+.pytype/
+
+# [역할] Visual Studio Code 에디터 설정 및 로컬 작업 내역 폴더(.vscode)를 제외합니다.
+.vscode/
+*.code-workspace
+
+# [역할] JetBrains(PyCharm 등) IDE 설정 폴더(.idea)를 제외합니다.
+.idea/
+
+# [역할] macOS 시스템에서 폴더 접근 시 자동 생성되는 메타데이터 파일(.DS_Store)을 제외합니다.
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# [역할] Windows 탐색기에서 썸네일 캐시용으로 자동 생성하는 시스템 파일을 제외합니다.
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# [역할] 로컬 환경 변수 설정 파일(.env)을 제외하여 민감 정보 유출을 차단합니다.
+.env
+.env.local
+
+# [역할] 미션 보너스 과제(DIFF 테스트용) 등으로 생성될 수 있는 임시 텍스트 및 로그 파일을 제외합니다.
+*.log
+*.tmp
+test_file*.txt
